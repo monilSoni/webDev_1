@@ -9,12 +9,27 @@
 
          var price = 200000;
          var total = price + price*(0.15);
+         var age = 21;
 
          var str1 = "Monil";
          var str2 = "Soni";
          var strf = str1 - str2;
-         document.write(strf);
-       }
+        <!-- document.write(strf); -->
+
+        var year = 1900;
+        if(year%400 == 0){
+          document.write("YES");
+        }
+        else if(year%100==0){
+          document.write("NO");
+        }
+        else if(year%4==0){
+          document.write("YES");
+        }
+        else {
+          document.write("NO");
+        }
+      }
     </script>
   </head>
   <body>
