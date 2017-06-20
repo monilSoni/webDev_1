@@ -9,3 +9,16 @@ h1{
   color: maroon;
   margin-left:40px;
 }
+
+p{
+  border: 2px solid red;
+}
+
+div{
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-bottom: 150px;
+  margin-left: 80px;
+  background-color: red;
+}
