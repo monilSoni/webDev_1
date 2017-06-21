@@ -10,10 +10,10 @@ export class AppComponent {
   onClick(){
   alert("Hello World");
   }
-  str:string="jinal shah";
-  num1:number = 0;
-  num2:number = 0;
-  ans:number = 0;
+  str:string="Monil Soni";
+  num1:number;
+  num2:number;
+  ans:number;
 
   flag:boolean=true;
 
