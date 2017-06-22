@@ -6,19 +6,24 @@ import {HttpModule} from '@angular/http'
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { Routing } from "./app.routing";
+import { HeaderComponent } from './header.component';
+import { TaskdataService } from "./taskdata.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    TasksComponent
+    TasksComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Routing
   ],
-  providers: [],
+  providers: [TaskdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

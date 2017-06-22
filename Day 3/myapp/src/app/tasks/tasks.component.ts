@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from "./task";
+import { TaskdataService } from "../taskdata.service";
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -11,12 +13,8 @@ export class TasksComponent implements OnInit {
   Title:string='';
   Status:string='';
 
-allTasks:Task[]=[
-  new Task('1','add to staging area','done'),
-  new Task('2','commit to git','pending'),
-  new Task('3','push to github','pending')
-];
-  constructor() { }
+allTasks:Task[]=[];
+  constructor(public _data:TaskdataService) { }
 
   onDelete(item){
     this.allTasks.splice(this.allTasks.indexOf(item), 1);
@@ -25,7 +23,15 @@ allTasks:Task[]=[
   onAddTask(){
     this.allTasks.push(new Task(this.Id, this.Title, this.Status));
   }
+
   ngOnInit() {
+    this._data.getAllTask().subscribe(
+      (data:Task[])=>{
+        this.allTasks=data;
+      }
+      
+    )
+
   }
 
 }
