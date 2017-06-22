@@ -7,10 +7,10 @@ body{
 .navbar{
     background: #78ADC9;
     padding: 5px;
-    color: white; 
-    position: fixed; 
+    color: white;
+    position: fixed;
     overflow: hidden;
-    top: 0; 
+    top: 0;
     width: 100%;
 }
 
@@ -31,26 +31,35 @@ ul li{
     list-style-type:none;
     display: inline-block;
     border: 1px solid white;
-    margin-right: 10px; 
+    margin-right: 10px;
     padding: 7px;
     border-radius: 3px;
 }
 
 .main {
-  padding: 16px;
+  padding: 49px;
+  padding-left: 0;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: auto; /* Used in this example to enable scrolling */
+}
+.main img{
+  width: 100%;
+  max-width: auto;
+  height:auto;
 }
 
 #intro{
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    position: relative;
-    color: white;
+    position: fixed;
+    color: #FF0000;
     display: block;
-    padding: 0px;
-    background: #78ADC9;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #ff000;
 
 }
 
